@@ -38,6 +38,7 @@ body {
     padding: 0 0.8vw;
     margin: 0 0.8vw;
     border: none;
+    border-radius: 0px;
     outline: none;
     background: transparent;
     border-bottom: 1px solid white;
