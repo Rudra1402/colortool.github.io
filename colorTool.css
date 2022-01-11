@@ -38,8 +38,11 @@ body {
     padding: 0 0.8vw;
     margin: 0 0.8vw;
     border: none;
-    border-radius: 5px;
     outline: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: medium;
 }
 
 .hexInput button {
@@ -64,10 +67,18 @@ body {
     margin: 0 0.6vw;
 }
 
-.opacity input {
+.opacity input[type = "range"] {
     width: 225px;
     cursor: pointer;
     margin: 0 0.6vw;
+    -webkit-appearance: none;
+    background: rgb(103, 165, 89);
+    height: 5px;
+    border-radius: 2px;
+}
+
+.opacity input[type = "range"]:focus {
+    outline: none;
 }
 
 .wrap {
