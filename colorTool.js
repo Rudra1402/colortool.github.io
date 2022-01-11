@@ -66,8 +66,9 @@ submit.addEventListener('click', () => {
         myRange.disabled = false;
         myRange.value = 100;
         myOpacity.innerText = '100%';
-        rgb.innerHTML = hexToRGB(myStr);
-        rgba.innerHTML = '';
+        let hexToRgbReturn = hexToRGB(myStr);
+        rgb.innerHTML = hexToRgbReturn;
+        rgba.innerHTML = 'rgba' + hexToRgbReturn.substring(3, hexToRgbReturn.length-1) + ', 1.00)';
     }
     myHex.value = "";
 })
